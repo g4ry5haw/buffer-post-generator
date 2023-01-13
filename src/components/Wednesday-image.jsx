@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { useRef, useState } from "react";
 import "../App.css";
 // import wednesdayImage from "../assets/wednesday_word_background.png";
