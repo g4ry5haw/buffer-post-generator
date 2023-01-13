@@ -32,8 +32,6 @@
     ]
   },
   "devDependencies": {
-    "nodemon": "^2.0.20",
-    "@testing-library/react": "^13.4.0",
-    "npkill": "^0.10.0"
+    "nodemon": "^2.0.20"
   }
 }
