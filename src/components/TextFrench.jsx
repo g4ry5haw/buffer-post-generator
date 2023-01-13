@@ -15,7 +15,7 @@ const TextFrench = () => {
         ref={inputRef}
         cols="40"
         rows="5"
-        placeholder="Le mot de mecredi "
+        defaultValue={"Le mot de mecredi "}
       ></textarea>
     </div>
   );

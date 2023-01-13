@@ -4,7 +4,6 @@ import "../App.css";
 
 const TextEnglish = () => {
   const inputRef = useRef("");
-  // const [updated, setUpdated] = useState("");
 
   return (
     <div>
@@ -15,8 +14,8 @@ const TextEnglish = () => {
         ref={inputRef}
         cols="40"
         rows="5"
-        placeholder="Wednesday's word is "
-      ></textarea>
+        defaultValue={"Wednesday's word is "}
+      />
     </div>
   );
 };
