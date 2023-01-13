@@ -14,10 +14,10 @@ const Wednesday = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <div>
         <input
-          className="wedInput"
+          className="wedWord"
           ref={inputRef}
           type="text"
           id="wedWord"
@@ -27,9 +27,9 @@ const Wednesday = () => {
         <button onClick={handleClick}>Update</button>
       </div>
 
-      <div className="container">
-        <img className="image" src={wednesdayImage} alt="" />
-        <h2 className="center">{updated}</h2>
+      <div className="banner">
+        <img className="wedImage" src={wednesdayImage} alt="" />
+        <h2 className="wedImageText">{updated}</h2>
       </div>
     </div>
   );
