@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef, useState } from "react";
-import wednesdayImage from "../assets/wednesday_word_background.png";
+// import wednesdayImage from "../assets/wednesday_word_background.png";
+// import wednesdayImage from "https://www.acebits.in/static/media/structure.19ad511fefb2168aa599f86b71d8900b.svg";
 import "../App.css";
 
 const Wednesday = () => {
@@ -12,6 +13,9 @@ const Wednesday = () => {
     // 👇 "inputRef.current.value" is input value
     setUpdated(inputRef.current.value);
   };
+
+  const wednesdayImage =
+    "https://www.acebits.in/static/media/structure.19ad511fefb2168aa599f86b71d8900b.svg";
 
   return (
     <div className="container">
@@ -29,6 +33,11 @@ const Wednesday = () => {
 
       <div className="banner">
         <img className="wedImage" src={wednesdayImage} alt="" />
+        {/* <img
+          className="wedImage"
+          src="https://www.acebits.in/static/media/structure.19ad511fefb2168aa599f86b71d8900b.svg"
+          alt=""
+        /> */}
         <h2 className="wedImageText">{updated}</h2>
       </div>
     </div>
