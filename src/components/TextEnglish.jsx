@@ -4,7 +4,7 @@ import "../App.css";
 
 const TextEnglish = () => {
   const inputRef = useRef("");
-  const [updated, setUpdated] = useState("");
+  // const [updated, setUpdated] = useState("");
 
   return (
     <div>
