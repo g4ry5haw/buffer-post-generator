@@ -8,7 +8,12 @@ const Wednesday = () => {
 
   const [updated, setUpdated] = useState("");
 
-  const handleClick = () => {
+  // const handleClick = () => {
+  //   // 👇 "inputRef.current.value" is input value
+  //   setUpdated(inputRef.current.value);
+  // };
+
+  const handleChange = () => {
     // 👇 "inputRef.current.value" is input value
     setUpdated(inputRef.current.value);
   };
@@ -17,7 +22,7 @@ const Wednesday = () => {
     "https://www.acebits.in/static/media/structure.19ad511fefb2168aa599f86b71d8900b.svg";
 
   return (
-    <div className="container">
+    <div>
       <div>
         <input
           className="wedWord"
@@ -25,9 +30,10 @@ const Wednesday = () => {
           type="text"
           id="wedWord"
           name="wedWord"
-          placeholder="Wednesday word"
+          placeholder="Enter the Wednesday word here"
+          onChange={handleChange}
         />
-        <button onClick={handleClick}>Update</button>
+        {/* <button onClick={handleClick}>Update</button> */}
       </div>
 
       <div className="banner">
