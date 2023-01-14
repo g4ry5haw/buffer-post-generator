@@ -1,9 +1,11 @@
 import React from "react";
-import { useRef } from "react";
+// import { useRef } from "react";
 import "../App.css";
 
-const TextEnglish = () => {
-  const inputRef = useRef("");
+const TextEnglish = ({ english, setEnglish }) => {
+  const handleChange = (e) => {
+    setEnglish(e.target.value);
+  };
 
   return (
     <div>
@@ -11,10 +13,11 @@ const TextEnglish = () => {
         className="wedTextBox"
         name="wedText"
         id="wedText"
-        ref={inputRef}
+        // ref={inputRef}
         cols="40"
         rows="5"
         defaultValue={"Wednesday's word is "}
+        onChange={handleChange}
       />
     </div>
   );

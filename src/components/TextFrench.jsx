@@ -1,10 +1,11 @@
-import React from "react";
-import { useRef } from "react";
+import React, { useState } from "react";
+// import { useRef } from "react";
 import "../App.css";
 
-const TextFrench = () => {
-  const inputRef = useRef("");
-  // const [updated, setUpdated] = useState("");
+const TextFrench = ({ french, setFrench }) => {
+  const handleChange = (e) => {
+    setFrench(e.target.value);
+  };
 
   return (
     <div>
@@ -12,11 +13,12 @@ const TextFrench = () => {
         className="wedTextBox"
         name="wedText"
         id="wedText"
-        ref={inputRef}
+        // ref={inputRef}
         cols="40"
         rows="5"
-        defaultValue={"Le mot de mecredi "}
-      ></textarea>
+        defaultValue={french}
+        onChange={handleChange}
+      />
     </div>
   );
 };

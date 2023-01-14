@@ -5,7 +5,7 @@ const Hashtags = () => {
     <div>
       <p>Instagram hashtags</p>
       <textarea
-        className="wedTextBox"
+        className="instaTextBox"
         name="instaHashtags"
         cols="40"
         rows="5"
@@ -15,7 +15,7 @@ const Hashtags = () => {
       />
       <p>Twitter hashtags</p>
       <textarea
-        className="wedTextBox"
+        className="twitterTextBox"
         name="twitterHashtags"
         cols="40"
         rows="5"
