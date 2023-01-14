@@ -4,7 +4,7 @@ import TextFrench from "./TextFrench";
 
 const TextCombined = () => {
   const [french, setFrench] = useState("Le mot de mecredi ");
-  const [english, setEnglish] = useState("");
+  const [english, setEnglish] = useState("Wednesday's word is ");
 
   return (
     <div>
