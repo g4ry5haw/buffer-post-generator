@@ -16,7 +16,7 @@ const TextEnglish = ({ english, setEnglish }) => {
         // ref={inputRef}
         cols="40"
         rows="5"
-        defaultValue={"Wednesday's word is "}
+        defaultValue={english}
         onChange={handleChange}
       />
     </div>
