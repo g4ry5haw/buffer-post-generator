@@ -10,6 +10,7 @@ const Wednesday = () => {
     type: "image/jpeg",
     quality: 1.0,
   });
+  console.log(image);
   const download = (image, { name = "img", extension = "jpg" } = {}) => {
     const a = document.createElement("a");
     a.href = image;
