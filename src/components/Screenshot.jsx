@@ -1,5 +1,5 @@
 import React, { createRef } from "react";
-import {disable-next-line} from "eslint";
+// import {disable-next-line} from "eslint";
 // import Text from "./Text";
 import { useScreenshot, createFileName } from "use-react-screenshot";
 
@@ -10,6 +10,8 @@ const Screenshot = () => {
     type: "image/jpeg",
     quality: 1.0,
   });
+
+  console.log(image);
 
   const download = (image, { name = "img", extension = "jpg" } = {}) => {
     const a = document.createElement("a");
@@ -23,7 +25,7 @@ const Screenshot = () => {
   return (
     <div>
       <button onClick={downloadScreenshot}>Download screenshot</button>
-      <div
+      {/* <div
         ref={ref}
         style={{
           border: "1px solid #ccc",
@@ -32,7 +34,7 @@ const Screenshot = () => {
         }}
       >
         fsdfsdfs
-      </div>
+      </div> */}
     </div>
   );
 };
