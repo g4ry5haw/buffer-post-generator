@@ -1,25 +1,20 @@
 import React from "react";
 import { useRef, useState } from "react";
 import "../App.css";
-// import wednesdayImage from "../assets/wednesday_word_background.png";
+import wednesdayImage from "../assets/images/wednesday_word_background.png";
 
 const Wednesday = () => {
   const inputRef = useRef(null);
 
   const [updated, setUpdated] = useState("");
 
-  // const handleClick = () => {
-  //   // 👇 "inputRef.current.value" is input value
-  //   setUpdated(inputRef.current.value);
-  // };
-
   const handleChange = () => {
     // 👇 "inputRef.current.value" is input value
     setUpdated(inputRef.current.value);
   };
 
-  const wednesdayImage =
-    "https://www.acebits.in/static/media/structure.19ad511fefb2168aa599f86b71d8900b.svg";
+  // const wednesdayImage =
+  //   "https://www.acebits.in/static/media/structure.19ad511fefb2168aa599f86b71d8900b.svg";
 
   return (
     <div>
