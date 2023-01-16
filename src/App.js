@@ -14,7 +14,9 @@ function App() {
   // const [french, setFrench] = useState("");
   // const [english, setEnglish] = useState("");
 
-  const [french, setFrench] = useState("Le mot de mecredi ");
+  const [french, setFrench] = useState("Le mot de mecredi, c'est ");
+  const [frenchSentence, setFrenchSentence] = useState("");
+  const [englishSentence, setEnglishSentence] = useState("");
   const [english, setEnglish] = useState("Wednesday's word is ");
   const [emoji, setEmoji] = useState(" 🙂");
 
@@ -23,10 +25,24 @@ function App() {
       {/* <Nav /> */}
       {/* <Screenshot /> */}
       <Wednesday />
-      <TextFrench french={french} setFrench={setFrench} />
-      <TextEnglish english={english} setEnglish={setEnglish} />
+      <TextFrench
+        french={french}
+        setFrench={setFrench}
+        setFrenchSentence={setFrenchSentence}
+      />
+      <TextEnglish
+        english={english}
+        setEnglish={setEnglish}
+        setEnglishSentence={setEnglishSentence}
+      />
       <Emoji emoji={emoji} setEmoji={setEmoji} />
-      <TextCombined french={french} english={english} emoji={emoji} />
+      <TextCombined
+        french={french}
+        frenchSentence={frenchSentence}
+        english={english}
+        englishSentence={englishSentence}
+        emoji={emoji}
+      />
       <Hashtags />
     </div>
   );
