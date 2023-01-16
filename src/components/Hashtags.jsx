@@ -18,7 +18,7 @@ const Hashtags = () => {
         className="twitterTextBox"
         name="twitterHashtags"
         cols="40"
-        rows="5"
+        rows="2"
         defaultValue={"#langtwt #learnfrench"}
       />
     </div>

@@ -17,17 +17,10 @@
   margin: 0 auto;
   display:flex;
   flex-wrap: wrap;
+  justify-content: center;
   border: 2px solid red;
 }
 
-.banner{
-  position: relative; 
-  /* width: 90%; */
-  margin: 0% auto;
-  border: 2px solid red;
-
-}
- 
 .wedWord {
   width: 50%;
   min-height: 30px;
@@ -38,7 +31,23 @@
   background-color: #f8f8f8;
   resize: none;
   text-align: center;
+  border: 2px solid red;
   
+}
+
+.banner{
+  position: relative; 
+  /* width: 90%; */
+  margin: 0% auto;
+  border: 2px solid red;
+
+}
+ 
+.wedImage { 
+  width: 60%;
+  height: auto;
+  opacity: 0.3;
+  border: 2px solid grey;
 }
 
 .wedImageText {
@@ -47,43 +56,66 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script';
-  font-size: max(9vw, 60px)
+  font-size: min(6vw, 70px);
+  border: 2px solid red;
+
+  /* font-size: 8vw; */
 
 }
 
-.wedImage { 
-  /* display:block; */
-  width: 50%;
-  height: auto;
-  opacity: 0.3;
-  border: 2px solid grey;
-}
 
 .wedTextBox {
-  width: 90%;
-  min-height: 20px;
-  padding : 1em;
-  margin: 1em;
+  min-width: 60vw;
+  padding : 0.5em;
+  margin-top: 1em;
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
-  /* text-align: center; */
   font-family: Arial, Helvetica, sans-serif;
-  font-size: max(1.5vw, 18px)
+  font-size: max(1.5vw, 18px);
+  border: 2px solid red;
+
 
 }
 .wedCombinedText {
-  width: 90%;
-  min-height: 20px;
-  padding : 1em;
-  margin: auto;
+  min-width: 60vw;
+  padding : 0.5em;
+  margin-top: 1em;
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
-  /* text-align: center; */
   font-family: Arial, Helvetica, sans-serif;
-  font-size: max(1.5vw, 18px)
+  font-size: max(1.5vw, 18px);
+  border: 2px solid red;
 
+
+}
+
+.instaTextBox {
+  min-width: 60vw;
+  padding : 0.5em;
+  /* margin-top: 1em; */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: max(1.5vw, 16px);
+  border: 2px solid red;
+  
+}
+
+.twitterTextBox {
+  min-width: 60vw;
+  padding : 0.5em;
+  /* margin-top: 1em; */
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: max(1.5vw, 16px);
+  border: 2px solid red;
 }

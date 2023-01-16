@@ -14,8 +14,8 @@ const TextFrench = ({ french, setFrench }) => {
         name="wedText"
         id="wedText"
         // ref={inputRef}
-        cols="40"
-        rows="5"
+        // cols="60"
+        rows="3"
         defaultValue={french}
         onChange={handleChange}
       />
