@@ -18,7 +18,7 @@
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .wedWord {
@@ -31,7 +31,7 @@
   background-color: #f8f8f8;
   resize: none;
   text-align: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   font-family: Arial, Helvetica, sans-serif;
   font-size: max(1.5vw, 18px);
   
@@ -39,17 +39,21 @@
 
 .banner{
   position: relative; 
-  /* width: 90%; */
+  width: 50%;
+  /* object-fit: cover; */
   margin: 0% auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  /* aspect-ratio: 1/1; */
 
 }
  
-.wedImage { 
-  width: 60%;
-  height: auto;
+.wedImage {
+  /* position: absolute; */
+  width: 100%;
+  /* height: auto; */
   opacity: 0.3;
-  border: 2px solid grey;
+  border: 1px solid grey;
+  aspect-ratio: 1/1;
 }
 
 .wedImageText {
@@ -59,7 +63,7 @@
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script';
   font-size: min(6vw, 70px);
-  border: 2px solid red;
+  /* border: 2px solid red; */
 
   /* font-size: 8vw; */
 
@@ -67,7 +71,7 @@
 
 
 .wedTextBox {
-  min-width: 60vw;
+  min-width: 50vw;
   padding : 0.5em;
   margin-top: 1em;
   border: 2px solid #ccc;
@@ -76,12 +80,10 @@
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: max(1.5vw, 18px);
-  border: 2px solid red;
-
-
+  border: 1px solid grey;
 }
 .wedCombinedText {
-  min-width: 60vw;
+  min-width: 50vw;
   padding : 0.5em;
   margin-top: 1em;
   border: 2px solid #ccc;
@@ -90,11 +92,11 @@
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: max(1.5vw, 18px);
-  border: 2px solid red;
+  border: 1px solid grey;
 }
 
 .instaTextBox {
-  min-width: 60vw;
+  min-width: 50vw;
   padding : 0.5em;
   /* margin-bottom: 1em; */
   border: 2px solid #ccc;
@@ -103,12 +105,12 @@
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: max(1.5vw, 16px);
-  border: 2px solid red;
+ border: 1px solid grey;
   
 }
 
 .twitterTextBox {
-  min-width: 60vw;
+  min-width: 50vw;
   padding : 0.5em;
   /* margin-top: 1em; */
   border: 2px solid #ccc;
@@ -117,7 +119,7 @@
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: max(1.5vw, 16px);
-  border: 2px solid red;
+  border: 1px solid grey;
 }
 
 button {
@@ -129,9 +131,12 @@ button {
 .copyHashtagButton {
   margin-bottom: 20px;
 }
+.copyTextButton {
+  margin-bottom: 20px;
+}
 
 .emojiTextBox {
-  min-width: 60vw;
+  min-width: 50vw;
   padding : 0.5em;
   margin-top: 1em;
   border: 2px solid #ccc;
@@ -140,5 +145,5 @@ button {
   resize: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: max(1.5vw, 18px);
-  border: 2px solid red;
+border: 1px solid grey;
 }

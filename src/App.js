@@ -8,7 +8,7 @@ import TextCombined from "./components/TextCombined";
 import TextEnglish from "./components/TextEnglish";
 import TextFrench from "./components/TextFrench";
 import Wednesday from "./components/Wednesday-image";
-// import EmojiComponent from "./components/EmojiPicker";
+// import Screenshot from "./components/Screenshot";
 
 function App() {
   // const [french, setFrench] = useState("");
@@ -21,6 +21,7 @@ function App() {
   return (
     <div className="App">
       {/* <Nav /> */}
+      {/* <Screenshot /> */}
       <Wednesday />
       <TextFrench french={french} setFrench={setFrench} />
       <TextEnglish english={english} setEnglish={setEnglish} />

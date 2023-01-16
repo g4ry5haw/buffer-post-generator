@@ -7,16 +7,23 @@ const TextCombined = ({ french, english, emoji }) => {
 ${english} ${emoji}`;
 
   return (
-    <div className="wedCombinedText">
-      {french} {emoji}
-      <br />
-      <br />
-      {english} {emoji}
-      <br />
-      <br />
-      <button onClick={() => navigator.clipboard.writeText(combinedText)}>
-        Copy text for Buffer
-      </button>
+    <div>
+      <div className="wedCombinedText">
+        {french} {emoji}
+        <br />
+        <br />
+        {english} {emoji}
+        <br />
+        <br />
+      </div>
+      <div>
+        <button
+          className="copyTextButton"
+          onClick={() => navigator.clipboard.writeText(combinedText)}
+        >
+          Copy text for Buffer
+        </button>
+      </div>
     </div>
   );
 };
